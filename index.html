@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffet Delícias da Vida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #e67e22;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('equipe/recipientes-abertos-de-alimentos_1203-2061.avif') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 6rem 1rem;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .section {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-family: 'Great Vibes', cursive;
+            color: #d35400;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            /* ou 0 para ficar com cantos retos */
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Buffet Delícias da Vida</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="banner">
+        <h1>Sabores que encantam!</h1>
+        <p>Transformamos momentos especiais em memórias deliciosas.</p>
+    </section>
+
+    <section class="section" id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos apaixonados por oferecer experiências gastronômicas inesquecíveis. Cuidamos de cada detalhe para tornar
+            seu evento único.</p>
+    </section>
+
+    <section class="section" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Casamentos</h3>
+                <p>Buffet completo para cerimônias e festas de casamento.</p>
+            </div>
+            <div class="card">
+                <h3>Eventos Corporativos</h3>
+                <p>Serviços sob medida para empresas e conferências.</p>
+            </div>
+            <div class="card">
+                <h3>Festas Infantis</h3>
+                <p>Cardápios divertidos e adaptados para o gosto da criançada.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section" id="galeria">
+        <h2>Galeria</h2>
+        <p>Conheça um pouco mais do nosso trabalho e da nossa equipe.</p>
+        <div class="gallery">
+            <img src="photo-1583338917496-7ea264c374ce.jpeg" alt="Buffet de doces" />
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80"
+                alt="Equipe do buffet" />
+            <img src="complexo.jpg" alt="Mesa decorada" />
+            <img src="istockphoto-650655146-612x612.jpg" alt="Equipe preparando comida" />
+        </div>
+    </section>
+
+    <section class="section" id="equipe">
+        <h2>Nossa Equipe</h2>
+        <p>Conheça os profissionais por trás do sabor e da organização impecável.</p>
+        <div class="team">
+            <div class="team-member">
+                <img src="equipe/Imagem do WhatsApp de 2025-04-16 à(s) 11.59.52_b133cef2.jpg" alt="Chef de cozinha" />
+                <h3>Bete</h3>
+                <p>Responsável pelos pratos principais e pela criação dos cardápios.</p>
+            </div>
+            <div class="team-member">
+                <img src="equipe/Imagem do WhatsApp de 2025-04-16 à(s) 12.00.07_631a5173.jpg"
+                    alt="Organizador de eventos" />
+                <h3>Marineide</h3>
+                <p>Coordena toda a organização dos eventos e atendimento aos clientes.</p>
+            </div>
+            <div class="team-member">
+                <img src="equipe/Imagem do WhatsApp de 2025-04-16 à(s) 12.04.48_5f31c47b.jpg" alt="Confeiteira" />
+                <h3>Cris</h3>
+                <p>Especialista em doces e sobremesas que conquistam pelo sabor e aparência.</p>
+            </div>
+            <div class="team-member">
+                <img src="equipe/Imagem do WhatsApp de 2025-04-16 à(s) 12.23.08_c749e487.jpg" alt="Confeiteira" />
+                <h3>Rita</h3>
+                <p>Especialista em massas que conquistam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco pelo WhatsApp: (11) 99999-9999<br />Ou envie um e-mail para:
+            contato@deliciasdavida.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Buffet Delícias da Vida. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
